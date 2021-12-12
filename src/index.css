@@ -1,13 +1,26 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #e8e8e8;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: 'NunitoSans-Regular';
+  src: local('NunitoSans-Regular'), url(./fonts/NunitoSans-Regular.ttf) format('opentype');
+}
+
+.heading-underline:after {
+	content: '';
+	position: absolute;
+	width: 90px;
+	height: 2px;
+	left: 0;
+	bottom: 0;
+	background-color: #4C3F91;
+}
+
+.heading-underline.pink:after {
+	background-color: #FF5677;
 }
