@@ -1,1 +1,1 @@
-# Given a list of tenants, we can get a glance to all the tenants' important details as well as view individual tanent.
+# Given a list of tenants, as an admin we can get tenants' details at a glance as well as view individual tanent.
