@@ -52,6 +52,7 @@ const TenantDetailsCard = (props: any) => {
                 alignItems="center"
                 flexWrap="wrap"
                 spacing={2}
+                className={classes.description}
               >
                 <Stack direction="row" spacing={2}>
                   {initials && (
@@ -72,7 +73,8 @@ const TenantDetailsCard = (props: any) => {
                 >
                   <Typography component="div" variant="subtitle2" color="green">
                     <span style={{ color: "#4a4a4a" }}>Status:&nbsp;</span>{" "}
-                    {details.status}
+                    <span style={{fontWeight: 600}}>{details.status}</span>
+                        {/* {details.status} */}
                   </Typography>
                   <Typography
                     component="div"
@@ -80,7 +82,8 @@ const TenantDetailsCard = (props: any) => {
                     color="orange"
                   >
                     <span style={{ color: "#4a4a4a" }}>Type:&nbsp;</span>{" "}
-                    {details.type}
+                    <span style={{fontWeight: 600}}>{details.type}</span>
+                    {/* {details.type} */}
                   </Typography>
                 </Stack>
               </Stack>

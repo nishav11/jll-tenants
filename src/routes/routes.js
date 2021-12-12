@@ -1,7 +1,7 @@
 import React from "react";
 import {
   BrowserRouter as Router,
-  HashRouter,
+  // HashRouter,
   Switch,
   Route,
 } from "react-router-dom";
@@ -13,7 +13,7 @@ function AllRoutes() {
   return (
     <React.Fragment>
       <Container maxWidth="md">
-        <HashRouter>
+        <Router>
           {/* <Navbar /> */}
           <Switch>
             <Route exact path="/">
@@ -23,12 +23,12 @@ function AllRoutes() {
               <TenantDetails />
             </Route>
           </Switch>
-        </HashRouter>
+        </Router>
       </Container>
     </React.Fragment>
   );
 }
 
-// using HashRouter instead of Router beacause the build was failing to load the pages
+// use HashRouter instead of Router beacause the build fails to load the pages
 
 export default AllRoutes;
